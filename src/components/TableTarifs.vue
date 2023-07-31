@@ -36,11 +36,8 @@
         <td>{{ item.cpu }}</td>
         <td>{{ item.ram }}</td>
         <td>{{ item.container }}</td>
-        <template v-if="deleteConnect">
-        <td>{{ item.connect }}</td>
-      </template>
         <td>{{ item.priceEuro }}€</td>
-        <td>{{ item.priceEuro * 85 }} руб.</td>
+        <td>{{ (item.priceEuro * 105.011600928).toFixed(0) }} руб.</td>
         <td><button class="table-btn"><a href="https://bill.srvup.ru/billing.php?do=tarifs" target="_blank">Заказать</a></button></td>
       </tr>
     <!-- <template v-if="!toggleTarifs">
@@ -79,6 +76,8 @@
 <style scoped>
 * {
   font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
 }
 .table-btn {
   width: 105px;
@@ -108,7 +107,7 @@ thead tr {
   border-radius: 10px 10px 0 0;
 }
 thead th {
-  padding-left: 25px;
+  padding-left: 54px;
     padding-right: 36px;
 }
 table-head {
@@ -125,8 +124,8 @@ tbody tr {
   border-radius: 20px;
 }
 tbody td {
-  padding-left: 6px;
-    padding-right: 50px;
+  padding-left: 24px;
+    padding-right: 38px;
   width: 150px;
 }
 .text-left {
