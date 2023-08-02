@@ -91,7 +91,7 @@
         v-if="picked == 2"
       />
     </div>
-    <div class="stepform_8vGLfm7 rnd_1271651571" v-show="picked == 1"></div>
+    <div style="margin-bottom: 20px;" class="stepform_8vGLfm7 rnd_1271651571" v-show="picked == 1"></div>
     <div class="stepform_AzCaoLN rnd_1283789748" v-show="picked == 2"></div>
     <div class="uniqueOffers">
       <p class="uniqueOffers-text">Уникальные предложения</p>
@@ -493,6 +493,11 @@ li {
   font-style: normal;
   font-weight: 700;
 }
+.nav-li:hover {
+  color:#1673ff;
+  transition: 0.5s;
+  border-radius: 5px;
+}
 .ref {
   text-decoration: none;
 }
@@ -636,6 +641,7 @@ input[type="radio"]:checked + label {
   padding: 20px;
   margin: 0 auto;
   margin-bottom: 100px;
+  gap: 50px;
 }
 .tarifPlans-tag {
   text-align: center;
@@ -657,7 +663,7 @@ input[type="radio"]:checked + label {
 .uniqueOffers {
   height: 345px;
   width: 1300px;
-  margin: 0 auto;
+  margin: 100px auto;
   text-align: center;
   background: white;
   padding: 20px;
@@ -706,7 +712,7 @@ input[type="radio"]:checked + label {
   font-size: 40px;
 }
 .questions-info-top {
-  font-size: 59px;
+  font-size: 49px;
   font-weight: 600;
 }
 .questions-info-bottom {
