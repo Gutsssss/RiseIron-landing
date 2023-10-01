@@ -1,7 +1,7 @@
 <template>
   <!-- nav -->
   <div class="nav">
-    <img src="@/assets/header_logo.png" />
+    <img src="@/assets/header_logo.png" width="150" />
     <ul class="nav-ul">
       <a class="ref" href="#tarifPlans"><li class="nav-li">Тарифы</li></a>
       <a class="ref" href="#questions"><li class="nav-li">FAQ</li></a>
@@ -11,15 +11,17 @@
       <a class="ref" href="https://wiki.srvup.ru/" target="_blank"
         ><li class="nav-li">База знаний</li></a
       >
-      <a class="ref" href="reviews.srvup.ru" target="_blank"
+      <a class="ref" href="https://vk.com/topic-200598401_49056856" target="_blank"
         ><li class="nav-li">Отзывы</li></a
       >
     </ul>
-    <button class="nav-btn">
-      <a href="https://bill.srvup.ru/" target="_blank" style="color: white"
+      <a 
+      href="https://bill.srvup.ru/" 
+      target="_blank" 
+      style="color: white;"
+      class="button"
         >Биллинг</a
       >
-    </button>
   </div>
   <!-- tarifs? -->
   <container class="tarifs">
@@ -33,54 +35,52 @@
         функциональность перед принятием окончательного решения.
       </p>
       <div class="tarifs-btns">
-        <button id="btn_1" class="tarifs-info-btn" style="color: white">
           <a
+          id="btn_1"
+          class="button"
             href=" https://bill.srvup.ru/billing.php?do=order2&tarif_id=58"
             target="_blank"
             >Протестировать сервер</a
           >
-        </button>
-        <button
-          id="btn_2"
-          class="tarifs-info-btn"
-          style="
-            color: rgba(29, 86, 236, 1);
-            background: white;
-            border: 2px solid rgba(29, 86, 236, 1);
-          "
-        >
-          <a href="#tarifPlans"> Посмотреть тарифы </a>
-        </button>
+          <a id='btn_2' class="button" href="#tarifPlans" style="background-color: white;border:2px solid rgba(29, 86, 236, 1); color:rgba(29, 86, 236, 1)"> Посмотреть тарифы </a>
       </div>
     </div>
     <img class="tarifs-img" src="@/assets/image2.png" />
   </container>
   <!-- about -->
   <container class="about">
-    <div><p>Почему выбирают <span style="border-bottom: 4px solid rgba(29, 86, 236, 1);">нас?</span></p></div>
-    <div><img src="@/assets/Lists.png" /></div>
+    <div><p>Почему выбирают нас?</p></div>
+    <div><img src="@/assets/rocket.png" />
+      <img src="@/assets/shield.png" />
+      <img src="@/assets/clock.png" />
+    </div>
+    <div><img src="@/assets/free.png" />
+      <img src="@/assets/hands.png" />
+      <img src="@/assets/sysAdmin.png" />
+    </div>
+    <div><img src="@/assets/lamp.png" />
+      <img src="@/assets/sandClock.png" />
+      <img src="@/assets/moneyBag.png" />
+    </div>
   </container>
   <!-- services -->
   <container class="services">
     <div class="services-info">
-      <div><p>Поддерживаемые <span style="border-bottom: 4px solid rgba(29, 86, 236, 1);">игры</span> и программы</p></div>
+      <div><p>Поддерживаемые игры и программы</p></div>
       <div class="services-games"><img src="@/assets/games.png" /></div>
     </div>
   </container>
   <!-- plans -->
   <div class="tarifPlans">
-    <p class="tarifPlans-tag" id="tarifPlans">Тарифные <span style="border-bottom: 4px solid rgba(29, 86, 236, 1);">планы</span> </p>
+    <p class="tarifPlans-tag" id="tarifPlans">Тарифные планы </p>
     <div class="tarifPlans-buttons">
       <input checked type="radio" id="one" value="1" v-model="picked" />
       <label for="one">Игровые сервера</label>
       <input type="radio" id="two" value="2" v-model="picked" />
       <label for="two">VDS</label>
-      <input type="radio" id="three" value="3" v-model="picked" />
-      <label for="three"
-        ><a href="https://dedic.srvup.ru/" target="_blank"
+      <a class="button" href="https://dedic.srvup.ru/" target="_blank"
           >Выделенный сервер</a
-        ></label
-      >
+        >
     </div>
     <div class="tarifPlans-table">
       <tableTarifs :table="table1" :inTarifs="inTarifs" v-if="picked == 1" />
@@ -116,7 +116,7 @@
       <AccordionTab header="Как долго активируется мой сервер?">
         <p>
           Активация игрового сервера обычно занимает всего несколько минут после
-          оформления заказа за исключением тестового периода и форсмажорных
+          оформления заказа за исключением тестового периода и форс-мажорных
           ситуаций. В случае с VDS как только вы заплатите за услугу и установка
           сервера будет завершена, вы сможете приступить к управлению своим
           сервером.
@@ -150,7 +150,7 @@
   </container>
   <container class="footer">
     <div class="footer-left">
-      <img src="@/assets/header_logo.png" />
+      <img class="logo" src="@/assets/header_logo.png" />
       <p>
         Клиентоорентированный<br />
         хостинг, которому нет<br />
@@ -165,9 +165,9 @@
           <a href=" https://wiki.srvup.ru/" target="_blank">База знаний</a>
         </li>
         <li>
-          <a href="reviews.srvup.ru" target="_blank">Отзывы</a>
+          <a href="https://vk.com/topic-200598401_49056856" target="_blank">Отзывы</a>
         </li>
-        <li><a>Биллинг</a></li>
+        <li><a href="https://bill.srvup.ru">Биллинг</a></li>
       </ul>
       <ul class="footer-middle-list">
         <p>Документы</p>
@@ -471,13 +471,12 @@ li {
 .nav {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
   width: 100%;
   height: 82px;
   align-items: center;
   padding-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-right: 80px;
   margin-bottom: 50px;
 }
 .nav-ul {
@@ -504,7 +503,7 @@ li {
 .ref:visited {
   color: rgba(18, 18, 18, 0.6);
 }
-.nav-btn {
+.nav .button {
   display: flex;
   height: 40px;
   min-height: 40px;
@@ -523,7 +522,7 @@ li {
 /* tarifs */
 .tarifs {
   display: flex;
-  width: 1313px;
+  width: 1200px;
   height: 462px;
   justify-content: center;
   align-items: center;
@@ -543,7 +542,6 @@ li {
 .tarifs-info {
   display: flex;
   width: 532px;
-  min-width: 532px;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
@@ -562,7 +560,7 @@ li {
 }
 .tarifs-info-speed {
   color: var(--t-2, #3f4d63);
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -571,7 +569,7 @@ li {
   display: flex;
   gap: 30px;
 }
-.tarifs-info-btn {
+.tarifs-btns .button {
   padding-top: 3px;
   width: 200px;
   height: 48px;
@@ -581,6 +579,8 @@ li {
   border: 0px;
   font-weight: 600;
   padding-bottom: 5px;
+  text-align: center;
+  padding-top: 10px;
 }
 /* why we */
 .about {
@@ -659,6 +659,20 @@ input[type="radio"]:checked + label {
   border-radius: 30px;
   margin: auto;
 }
+.tarifPlans-buttons .button {
+    max-width: 200px;
+    max-height: 50px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: rgba(18, 18, 18, 0.7);
+    text-align: center;
+    padding: 13px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 /* offers */
 .uniqueOffers {
   height: 345px;
@@ -735,6 +749,9 @@ input[type="radio"]:checked + label {
   margin-top: 40px;
   font-weight: 500;
 }
+.footer-left .logo {
+  padding-left: 30px;
+}
 .footer-left-p {
   font-size: 14px;
   font-weight: 500;
@@ -745,6 +762,7 @@ input[type="radio"]:checked + label {
 .footer-middle {
   display: flex;
   line-height: 40px;
+  align-items: flex-start;
 }
 .footer-middle p {
   font-size: 22px;
@@ -773,5 +791,232 @@ input[type="radio"]:checked + label {
 }
 .footer-middle-list {
   width: 250px;
+}
+@media screen and (max-width:980px) {
+    .nav {
+      width: 95%;
+    }
+    .nav-ul {
+      gap: 10px;
+    }
+    .nav-li {
+      font-size: 16px;
+    }
+    .tarifs {
+      width: 95%;
+      gap: 0px;
+    }
+    .tarifs-img {
+      width: 300px;
+      height: 300px;
+    }
+    .services {
+      width: 95%;
+    }
+    .services img {
+      width: 95%;
+    }
+    .services-games {
+      margin-left: 75px;
+    }
+    .uniqueOffers {
+      width: 95%;
+      height: 300px;
+    }
+    .uniqueOffers-div-text {
+      font-size: 20px;
+    }
+    .questions {
+      gap: 10px;
+      width: 95%;
+    }
+    .footer {
+      grid-template-columns: 263px 400px 235px;
+      gap: 10px;
+    }
+}
+@media screen and (max-width:650px) {
+  .nav img {
+    width:100px;
+  }
+  .nav-ul {
+      gap: 8px;
+    }
+    .nav-li {
+      font-size: 10px;
+    }
+    .nav-btn {
+      width: 80px;
+    }
+    .tarifs {
+      width: 95%;
+      gap: 20px;
+    }
+    .tarifs-img {
+      width: 200px;
+      height: 200px;
+    }
+    .tarifs-info {
+      width: 300px;
+      margin-left: 5px;
+    }
+    .tarifs-info-host {
+      font-size: 16px;
+      width: 300px;
+    }
+    .tarifs-info-speed {
+      font-size: 12px;
+    }
+    .tarifs-btns {
+      gap: 5px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+    }
+    .services p {
+      font-size: 20px;
+    }
+    .tarifPlans-tag {
+      font-size: 20px;
+    }
+    .tarifPlans-buttons {
+      width: 560px;
+      justify-content: space-evenly;
+    }
+    .tarifPlans-buttons label {
+      margin: 5px;
+    }
+    .tarifPlans-buttons .button {
+      font-size: 12px;
+    }
+    .uniqueOffers {
+      height: 200px;
+    }
+    .uniqueOffers-text {
+      font-size: 24px;
+    }
+    .uniqueOffers-div-text {
+      font-size: 12px;
+    }
+    .footer p{
+      font-size: 16px;
+    }
+    .footer-left img  {
+      width: 200px;
+    }
+    .footer-left p {
+      font-size: 12px;
+    }
+    .footer * {
+      font-size: 12px;
+    }
+    .footer-middle {
+      line-height: 25px;
+    }
+    .footer {
+      grid-template-columns:200px 200px 170px;
+      gap: 5px;
+    }
+}
+@media screen and (max-width:480px) {
+    .nav {
+      margin: 0 auto;
+      padding: 10px;
+      font-size: 12px;
+    }
+    .nav-li {
+      font-size: 9px;
+    }
+    .nav-btn {
+      width: 60px;
+    }
+    .tarifs {
+      gap: 0px;
+    }
+    .tarifs-info {
+      width: 400px;
+    }
+    .tarifs-img {
+      display: none;
+    }
+    .tarifs-info-host {
+      font-size: 20px;
+      width: 250px;
+    }
+    .tarifs-btns {
+      width: 150px;
+      font-size: 14px;
+    }
+    .tarifs-info-btn {
+      width: 150px;
+    }
+    .about p {
+      font-size: 20px;
+    }
+    .tarifPlans-buttons {
+      width: 420px;
+      justify-content: space-evenly;
+    }
+    .tarifPlans-buttons .button {
+      font-size: 8px;
+      height: 40px;
+    }
+    .tarifPlans-buttons label {
+      margin: 5px;
+      
+    }
+    input[type="radio"] + label {
+      font-size: 12px;
+      height: 40px;
+    }
+    .tarifPlans-buttons a {
+      font-size: 10px;
+    }
+    .services p {
+      font-size: 16px;
+    }
+    .services-games {
+      width: 500px;
+      margin-left: 0px;
+    }
+    .uniqueOffers-text {
+      margin-bottom: 15px;
+    }
+    .questions-info-top {
+      font-size: 24px;
+    }
+    .footer p{
+      font-size: 16px;
+    }
+    .footer-left img  {
+      width: 150px;
+      margin-left: 40px;
+    }
+    .footer-left p {
+      font-size: 16px;
+    }
+    .footer * {
+      font-size: 16px;
+    }
+    .footer {
+      display: flex;
+      width: 300px;
+      flex-direction: column;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .footer-left .logo {
+      padding-left: 0;
+    }
+    .footer-middle {
+      gap: 60px;
+    }
+    .footer-middle-list {
+      width: 50px;
+    }
+    .footer-right {
+      text-align: center;
+      font-size: 16px;
+    }
 }
 </style>

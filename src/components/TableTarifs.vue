@@ -38,22 +38,8 @@
         <td>{{ item.container }}</td>
         <td>{{ item.priceEuro }}€</td>
         <td>{{ (item.priceEuro * 105.011600928).toFixed(0) }} руб.</td>
-        <td><button class="table-btn"><a href="https://bill.srvup.ru/billing.php?do=tarifs" target="_blank">Заказать</a></button></td>
+        <td><a class="button" href="https://bill.srvup.ru/billing.php?do=tarifs" target="_blank">Заказать</a></td>
       </tr>
-    <!-- <template v-if="!toggleTarifs">
-      <tr
-        v-for="item in inTarifs2"
-        :key="item.id"
-      >
-        <td>{{ item.tarifName }}</td>
-        <td>{{ item.cpu }}</td>
-        <td>{{ item.ram }}</td>
-        <td>{{ item.SSD }}</td>
-        <td>{{ item.priceEuro }}€</td>
-        <td>{{ item.priceEuro * 85 }} руб.</td>
-        <td><button class="table-btn"><a href="https://bill.srvup.ru/billing.php?do=tarifs" target="_blank">Заказать</a></button></td>
-      </tr>
-    </template> -->
     </tbody>
   </table>
 </template>
@@ -79,7 +65,7 @@
   font-style: normal;
   font-weight: 400;
 }
-.table-btn {
+.button {
   width: 105px;
   height: 39px;
   border: none;
@@ -87,10 +73,9 @@
   background-color: #1673FF;
   color: #FFFFFF;
   margin-left: 35px;
-}
-.table-btn a {
   text-decoration: none;
-  color: white;
+  display: block;
+  padding-top: 10px;
 }
 table {
   width: 1200px;
@@ -116,6 +101,7 @@ table-head {
 }
 tr {
   background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 tbody tr {
   display: block;
@@ -124,12 +110,70 @@ tbody tr {
   border-radius: 20px;
 }
 tbody td {
-  padding-left: 24px;
+  padding-left: 33px;
     padding-right: 38px;
-  width: 150px;
+  width: 160px;
 }
 .text-left {
   margin-left: 10px;
-  width: 140px;
+  width: 158px;
+}
+@media screen and (max-width: 980px) {
+  table {
+    width: 90%;
+  }
+  .table-head {
+    width: 830px;
+  }
+  thead th {
+    padding-left: 10px;
+    padding-left: 60px;
+  }
+}
+@media screen and (max-width: 650px) {
+  * {
+    font-size: 12px;
+  }
+  table {
+    width: 90%;
+  }
+  .table-head {
+    width: 550px;
+  }
+  thead th {
+    padding-left: 10px;
+  }
+  tbody tr{
+   width: 550px;
+  }
+  tbody td {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 120px;
+  }
+}
+@media screen and (max-width:480px) {
+  table {
+    width: 90%;
+  }
+  .table-head {
+    width: 400px;
+  }
+  thead th {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  tbody tr{
+   width: 400px;
+  }
+  tbody td {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 120px;
+  }
+  .button {
+    width: 60px;
+    margin: 0;
+  }
 }
 </style>
