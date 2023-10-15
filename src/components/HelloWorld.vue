@@ -38,7 +38,7 @@
           <a
           id="btn_1"
           class="button"
-            href=" https://bill.srvup.ru/billing.php?do=order2&tarif_id=58"
+            href="trial.srvup.ru"
             target="_blank"
             >Протестировать сервер</a
           >

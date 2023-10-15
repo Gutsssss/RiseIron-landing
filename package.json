@@ -11,6 +11,8 @@
     "@jamescoyle/vue-icon": "^0.1.2",
     "@mdi/font": "^7.2.96",
     "@mdi/js": "^7.2.96",
+    "axios": "^1.5.1",
+    "cheerio": "^1.0.0-rc.12",
     "core-js": "^3.8.3",
     "mdi": "^2.2.43",
     "mdi-vue": "^3.0.13",
