@@ -78,7 +78,7 @@
   padding-top: 10px;
 }
 table {
-  width: 1200px;
+  width: 1170px;
   margin: 0 auto;
   border-spacing:0px 15px;
   text-align: center;

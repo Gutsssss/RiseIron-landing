@@ -50,7 +50,7 @@
   <!-- about -->
   <container class="about">
     <div><p>Почему выбирают нас?</p></div>
-    <div><img src="@/assets/rocket.png" />
+    <div class="div-about"><img src="@/assets/rocket.png" />
       <img src="@/assets/shield.png" />
       <img src="@/assets/clock.png" />
     </div>
@@ -107,7 +107,7 @@
       <p class="questions-info-top">Часто задаваемые вопросы</p>
       <p class="questions-info-bottom">
         Не нашли ответа на вопрос?<br />
-        Загляните в нашу базу знаний или<br />
+        Загляните в нашу <a style="text-decoration:underline" target="_blank" href="https://wiki.srvup.ru/">базу знаний</a> или<br />
         напишите нам, мы будем рады помочь!
       </p>
     </div>
@@ -162,7 +162,7 @@
       <ul class="footer-middle-list">
         <p>Ссылки</p>
         <li>
-          <a href=" https://wiki.srvup.ru/" target="_blank">База знаний</a>
+          <a href="https://wiki.srvup.ru/" target="_blank">База знаний</a>
         </li>
         <li>
           <a href="https://vk.com/topic-200598401_49056856" target="_blank">Отзывы</a>
@@ -176,7 +176,11 @@
             >Пользовательское соглашение</a
           >
         </li>
-        <li hidden>Политика конфиденциальности</li>
+        <li>
+          <a href="https://wiki.srvup.ru/privacy-policy" target="_blank"
+            >Политика конфиденциальности</a
+          >
+        </li>
       </ul>
     </div>
     <div class="footer-right">
@@ -407,7 +411,7 @@ export default {
     };
   },
 };
-(function (s, t, e, p, f, o, r, m) {
+( function (s, t, e, p, f, o, r, m) {
   s[t] = s[t] || {};
   s[t][1271651571] = {
     id: "8vGLfm7",
@@ -426,8 +430,8 @@ export default {
   "appendChild",
   "querySelector"
 );
-(function (s, t, e, p, f, o, r, m) {
-  s[t] = s[t] || {};
+( function (s, t, e, p, f, o, r, m) {
+  s[t] = s[t] || {}; 
   s[t][1283789748] = {
     id: "AzCaoLN",
     rnd: 1283789748,
@@ -584,8 +588,13 @@ li {
 }
 /* why we */
 .about {
-  margin: 0 auto;
+  margin:0 auto;
   text-align: center;
+  height: 350px;
+  padding-top: 20px;
+}
+.div-about {
+  margin-top:60px ;
 }
 .about p {
   color: var(--t-2, #3f4d63);
@@ -599,7 +608,7 @@ li {
 .services {
   margin: 0 auto;
   text-align: center;
-  margin: 50px;
+  margin-top: 50px;
 }
 .services p {
   color: var(--t-2, #3f4d63);
@@ -640,7 +649,6 @@ input[type="radio"]:checked + label {
   align-items: center;
   padding: 20px;
   margin: 0 auto;
-  margin-bottom: 100px;
   gap: 50px;
 }
 .tarifPlans-tag {
@@ -677,7 +685,7 @@ input[type="radio"]:checked + label {
 .uniqueOffers {
   height: 345px;
   width: 1300px;
-  margin: 100px auto;
+  margin: 70px auto;
   text-align: center;
   background: white;
   padding: 20px;
@@ -709,6 +717,7 @@ input[type="radio"]:checked + label {
   margin: auto;
   align-items: center;
   gap: 100px;
+  height: 350px;
 }
 .questions-info {
   width: 370px;
@@ -740,6 +749,7 @@ input[type="radio"]:checked + label {
   justify-content: center;
   gap: 170px;
   display: grid;
+  align-items: start;
   grid-template-columns: 263px 500px 235px;
 }
 .footer-left p {
