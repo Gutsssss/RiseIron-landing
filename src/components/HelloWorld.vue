@@ -27,7 +27,7 @@
   <container class="tarifs">
     <div class="tarifs-info">
       <p class="tarifs-info-host">
-        Мощный хостинг с Anti-DDoS Game защитой для проектов любых сложностей
+        Мощный хостинг<br> с Anti-DDoS Game защитой для проектов любых сложностей
       </p>
       <p class="tarifs-info-speed">
         Чтобы вы могли убедиться в качестве нашего хостинга, мы предлагаем<br />
@@ -98,7 +98,7 @@
       <div class="uniqueOffers-div">
         <p class="uniqueOffers-div-text">Скидка 5% при оплате за три месяца</p>
         <p class="uniqueOffers-div-text">15% за приглашенного друга</p>
-        <p class="uniqueOffers-div-text">Если найдете дешевле,сделаем скидку</p>
+        <p class="uniqueOffers-div-text">Если найдете дешевле, сделаем скидку</p>
       </div>
     </div>
   </div>
@@ -239,7 +239,7 @@ export default {
           cpu: "0.5 vCore",
           ram: "1 GB DDR4",
           container: "10 GB NVMe",
-          priceEuro: 1.3,
+          priceEuro: 1.4,
           priceRub: 0,
         },
         {
@@ -248,7 +248,7 @@ export default {
           cpu: "1 vCore",
           ram: "2 GB DDR4",
           container: "20 GB NVMe",
-          priceEuro: 2.6,
+          priceEuro: 2.8,
           priceRub: 10,
         },
         {
@@ -257,7 +257,7 @@ export default {
           cpu: "1.5 vCore",
           ram: "3 GB DDR4",
           container: "30 GB NVMe",
-          priceEuro: 3.9,
+          priceEuro: 4.2,
           priceRub: 10,
         },
         {
@@ -266,7 +266,7 @@ export default {
           cpu: "2 vCore",
           ram: "4 GB DDR4",
           container: "40 GB NVMe",
-          priceEuro: 5.2,
+          priceEuro: 5.6,
           priceRub: 10,
         },
         {
@@ -275,7 +275,7 @@ export default {
           cpu: "2.5 vCore",
           ram: "5 GB DDR4",
           container: "50 GB NVMe",
-          priceEuro: 6.5,
+          priceEuro: 7,
           priceRub: 10,
         },
         {
@@ -284,7 +284,7 @@ export default {
           cpu: "3 vCore",
           ram: "6 GB DDR4",
           container: "60 GB NVMe",
-          priceEuro: 7.8,
+          priceEuro: 8.4,
           priceRub: 10,
         },
         {
@@ -293,7 +293,7 @@ export default {
           cpu: "4 vCore",
           ram: "8 GB DDR4",
           container: "80 GB NVMe",
-          priceEuro: 10.4,
+          priceEuro: 11.2,
           priceRub: 10,
         },
         {
@@ -302,7 +302,7 @@ export default {
           cpu: "5 vCore",
           ram: "10 GB DDR4",
           container: "100 GB NVMe",
-          priceEuro: 13,
+          priceEuro: 14,
           priceRub: 10,
         },
         {
@@ -311,7 +311,7 @@ export default {
           cpu: "6 vCore",
           ram: "12 GB DDR4",
           container: "120 GB NVMe",
-          priceEuro: 15.6,
+          priceEuro: 16.8,
           priceRub: 10,
         },
       ],
@@ -319,81 +319,81 @@ export default {
         {
           id: 1,
           tarifName: "VM-2",
-          cpu: 1,
+          cpu: "1 vCore",
           ram: "2 GB DDR4",
-          container: 20,
+          container: "20 GB NVMe",
           priceEuro: 4.1,
           priceRub: 431,
         },
         {
           id: 3,
           tarifName: "VM-4",
-          cpu: 2,
+          cpu: "2 vCore",
           ram: "4 GB DDR4",
-          container: 40,
+          container: "40 GB NVMe",
           priceEuro: 6.7,
           priceRub: 431,
         },
         {
           id: 4,
           tarifName: "VM-5",
-          cpu: 2.5,
+          cpu: "2.5 vCore",
           ram: "5 GB DDR4",
-          container: 50,
+          container: "50 GB NVMe",
           priceEuro: 8,
           priceRub: 431,
         },
         {
           id: 5,
           tarifName: "VM-6",
-          cpu: 3,
+          cpu: "3 vCore",
           ram: "6 GB DDR4",
-          container: 60,
+          container: "60 GB NVMe",
           priceEuro: 9.3,
           priceRub: 431,
         },
         {
           id: 5,
           tarifName: "VM-8",
-          cpu: 4,
+          cpu: "4 vCore",
           ram: "8 GB DDR4",
-          container: 80,
+          container: "80 GB NVMe",
           priceEuro: 11.9,
           priceRub: 431,
         },
         {
           id: 5,
           tarifName: "VM-10",
-          cpu: 5,
+          cpu: "5 vCore",
           ram: "10 GB DDR4",
-          container: 100,
+          container: "100 GB NVMe",
           priceEuro: 14.5,
           priceRub: 431,
         },
         {
           id: 5,
           tarifName: "VM-12",
-          cpu: 6,
+          cpu: "6 vCore",
           ram: "12 GB DDR4",
-          container: 120,
+          container: "120 GB NVMe",
           priceEuro: 17.1,
           priceRub: 431,
         },
         {
           id: 5,
           tarifName: "VM-16",
-          cpu: 8,
+          cpu: "8 vCore",
           ram: "16 GB DDR4",
-          container: 160,
+          container: "160 GB NVMe",
           priceEuro: 22.3,
           priceRub: 431,
         },
         {
           id: 5,
           tarifName: "VM-32",
-          cpu: 16,
+          cpu: "16 vCore",
           ram: "32 GB DDR4",
-          container: 320,
+          container: "320 GB NVMe",
           priceEuro: 43.1,
           priceRub: 431,
         },
@@ -729,6 +729,9 @@ input[type="radio"]:checked + label {
   width: 900px;
   font-size: 24px;
 }
+:deep(.p-accordion .p-accordion-header .p-accordion-header-link) {
+  padding: 1.75rem;
+}
 .p-accordion-content {
   width: 900px;
   background-color: white;
@@ -934,6 +937,13 @@ input[type="radio"]:checked + label {
       padding: 10px;
       font-size: 12px;
     }
+    #app > div.nav > a {
+      width: 50px;
+      font-size: 10px;
+    }
+    #app > div.nav > img {
+      width: 75px;
+    }
     .nav-li {
       font-size: 9px;
     }
@@ -951,10 +961,14 @@ input[type="radio"]:checked + label {
     }
     .tarifs-info-host {
       font-size: 20px;
-      width: 250px;
+      width: 360px;
+      text-align: center;
+    }
+    .tarifs-info-speed {
+      text-align: center;
     }
     .tarifs-btns {
-      width: 150px;
+      width: 340px;
       font-size: 14px;
     }
     .tarifs-info-btn {
@@ -964,24 +978,35 @@ input[type="radio"]:checked + label {
       font-size: 20px;
     }
     .tarifPlans-buttons {
-      width: 420px;
+      width: 370px;
       justify-content: space-evenly;
     }
     .tarifPlans-buttons .button {
       font-size: 8px;
       height: 40px;
+      width: 180px;
     }
     .tarifPlans-buttons label {
       margin: 5px;
       
     }
     input[type="radio"] + label {
-      font-size: 12px;
+      font-size: 10px;
       height: 40px;
     }
     .tarifPlans-buttons a {
       font-size: 10px;
     }
+    .questions {
+      flex-direction: column;
+      height: auto;
+    }
+    #questions > div.p-accordion.p-component {
+      width: 425px;
+    }
+    :deep(.p-accordion .p-accordion-header .p-accordion-header-link) {
+  padding: 1rem;
+}
     .services p {
       font-size: 16px;
     }
@@ -1006,23 +1031,22 @@ input[type="radio"]:checked + label {
       font-size: 16px;
     }
     .footer * {
-      font-size: 16px;
+      font-size: 12px;
     }
     .footer {
       display: flex;
-      width: 300px;
+      width: 450px;
       flex-direction: column;
       margin: 0 auto;
-      text-align: center;
+      padding-top: 15px;
+      align-items: center
     }
     .footer-left .logo {
       padding-left: 0;
     }
-    .footer-middle {
-      gap: 60px;
-    }
     .footer-middle-list {
-      width: 50px;
+      width: 200px;
+      text-align: center;
     }
     .footer-right {
       text-align: center;

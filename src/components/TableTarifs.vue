@@ -37,13 +37,13 @@
         <td>{{ item.ram }}</td>
         <td>{{ item.container }}</td>
         <td>{{ item.priceEuro }}€</td>
-        <td>{{ (item.priceEuro * 105.011600928).toFixed(0) }} руб.</td>
+        <td>{{ (item.priceEuro * 110).toFixed(0) }} руб.</td>
         <td><a class="button" href="https://bill.srvup.ru/billing.php?do=tarifs" target="_blank">Заказать</a></td>
       </tr>
     </tbody>
   </table>
 </template>
-
+/* 105.011600928 */
 <script>
     export default {
       data() {
@@ -158,6 +158,7 @@ tbody td {
   }
   .table-head {
     width: 400px;
+    padding: 10px;
   }
   thead th {
     padding-left: 0px;
@@ -165,15 +166,24 @@ tbody td {
   }
   tbody tr{
    width: 400px;
+   padding: 10px;
   }
   tbody td {
     padding-left: 5px;
     padding-right: 5px;
     width: 120px;
   }
+  #app > div.tarifPlans > div.tarifPlans-table > table > thead > tr > th {
+    font-size: 10px;
+  }
+  #app > div.tarifPlans > div.tarifPlans-table > table > tbody > tr > td {
+    font-size: 10px;
+  }
   .button {
-    width: 60px;
+    width: 40px;
+    height: 30px;
     margin: 0;
+    font-size: 8px;
   }
 }
 </style>
