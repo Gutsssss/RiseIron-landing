@@ -11,203 +11,292 @@
       <a class="ref" href="https://wiki.srvup.ru/" target="_blank"
         ><li class="nav-li">База знаний</li></a
       >
-      <a class="ref" href="https://vk.com/topic-200598401_49056856" target="_blank"
-        ><li class="nav-li">Отзывы</li></a
+      <a
+        class="ref"
+        href="https://vk.com/topic-200598401_49056856"
+        target="_blank"
+        >
+        <li class="nav-li">Отзывы</li>
+        </a
       >
     </ul>
-      <a 
-      href="https://bill.srvup.ru/" 
-      target="_blank" 
-      style="color: white;"
+    <a
+      href="https://bill.srvup.ru/"
+      target="_blank"
+      style="color: white"
       class="button"
-        >Биллинг</a
+      >Биллинг</a
+    >
+    <div class="burger">
+    <!-- burger -->
+    <div>
+    <el-icon @click="toggleMenu" size="60" color="rgba(29, 86, 236, 1)"
+      ><svg
+        viewBox="0 0 1024 1024"
+        xmlns="http://www.w3.org/2000/svg"
+        data-v-ea893728=""
       >
+        <path
+          fill="currentColor"
+          d="M160 448a32 32 0 0 1-32-32V160.064a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V416a32 32 0 0 1-32 32H160zm448 0a32 32 0 0 1-32-32V160.064a32 32 0 0 1 32-32h255.936a32 32 0 0 1 32 32V416a32 32 0 0 1-32 32H608zM160 896a32 32 0 0 1-32-32V608a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32v256a32 32 0 0 1-32 32H160zm448 0a32 32 0 0 1-32-32V608a32 32 0 0 1 32-32h255.936a32 32 0 0 1 32 32v256a32 32 0 0 1-32 32H608z"
+        ></path></svg
+    ></el-icon>
   </div>
-  <!-- tarifs? -->
-  <container class="tarifs">
-    <div class="tarifs-info">
-      <p class="tarifs-info-host">
-        Мощный хостинг<br> с Anti-DDoS Game защитой для проектов любых сложностей
-      </p>
-      <p class="tarifs-info-speed">
-        Чтобы вы могли убедиться в качестве нашего хостинга, мы предлагаем<br />
-        тестовый период. Вы сможете оценить нашу производительность и<br />
-        функциональность перед принятием окончательного решения.
-      </p>
-      <div class="tarifs-btns">
-          <a
-          id="btn_1"
-          class="button"
-            href="trial.srvup.ru"
-            target="_blank"
+    <div class="burgerMenu menu-hidden" :class="{'menu-visible' : menuVisible}">
+      <el-icon  @click="toggleMenu" size="50" color="rgba(29, 86, 236, 1)"
+      ><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" data-v-ea893728=""><path fill="currentColor" d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"></path></svg></el-icon>
+      <ul class="burgerMenu-ul">
+      <a @click="toggleMenu" class="ref" href="#tarifPlans"><li class="burgerMenu-li">Тарифы</li></a>
+      <a @click="toggleMenu" class="ref" href="#questions"><li class="burgerMenu-li">FAQ</li></a>
+      <a @click="toggleMenu" class="ref" href=" https://wiki.srvup.ru/support" target="_blank"
+        ><li class="burgerMenu-li">Поддержка</li></a
+      >
+      <a class="ref" href="https://wiki.srvup.ru/" target="_blank"
+        ><li class="burgerMenu-li">База знаний</li></a
+      >
+      <a
+        class="ref"
+        href="https://vk.com/topic-200598401_49056856"
+        target="_blank"
+        ><li class="burgerMenu-li">Отзывы</li></a
+      >
+    </ul>
+    <a
+      href="https://bill.srvup.ru/"
+      target="_blank"
+      style="color: white"
+      class="button"
+      >Биллинг</a
+    >
+    <div>
+    </div>
+    </div>
+  </div>
+  </div>
+  <div class="container">
+    <!-- tarifs? -->
+    <div class="tarifs">
+      <div class="tarifs-info">
+        <p class="tarifs-info-host">
+          Мощный хостинг<br />
+          с Anti-DDoS Game защитой для проектов любых сложностей
+        </p>
+        <p class="tarifs-info-speed">
+          Чтобы вы могли убедиться в качестве нашего хостинга, мы предлагаем<br />
+          тестовый период. Вы сможете оценить нашу производительность и<br />
+          функциональность перед принятием окончательного решения.
+        </p>
+        <div class="tarifs-btns">
+          <a id="btn_1" class="button" href="trial.srvup.ru" target="_blank"
             >Протестировать сервер</a
           >
-          <a id='btn_2' class="button" href="#tarifPlans" style="background-color: white;border:2px solid rgba(29, 86, 236, 1); color:rgba(29, 86, 236, 1)"> Посмотреть тарифы </a>
+          <a
+            id="btn_2"
+            class="button"
+            href="#tarifPlans"
+            style="
+              background-color: white;
+              border: 2px solid rgba(29, 86, 236, 1);
+              color: rgba(29, 86, 236, 1);
+            "
+          >
+            Посмотреть тарифы
+          </a>
+        </div>
+      </div>
+      <img class="tarifs-img" src="@/assets/image2.png" />
+    </div>
+    <!-- about -->
+    <div class="about">
+      <div><p>Почему выбирают нас?</p></div>
+      <div class="div-about">
+        <img src="@/assets/rocket.png" />
+        <img src="@/assets/shield.png" />
+        <img src="@/assets/clock.png" />
+      </div>
+      <div>
+        <img src="@/assets/free.png" />
+        <img src="@/assets/hands.png" />
+        <img src="@/assets/sysAdmin.png" />
+      </div>
+      <div>
+        <img src="@/assets/lamp.png" />
+        <img src="@/assets/sandClock.png" />
+        <img src="@/assets/moneyBag.png" />
       </div>
     </div>
-    <img class="tarifs-img" src="@/assets/image2.png" />
-  </container>
-  <!-- about -->
-  <container class="about">
-    <div><p>Почему выбирают нас?</p></div>
-    <div class="div-about"><img src="@/assets/rocket.png" />
-      <img src="@/assets/shield.png" />
-      <img src="@/assets/clock.png" />
+    <!-- services -->
+    <div class="services">
+      <p>Поддерживаемые игры и программы</p>
+      <div class="services-games">
+        <img src="@/assets/games.png" />
+      </div>
     </div>
-    <div><img src="@/assets/free.png" />
-      <img src="@/assets/hands.png" />
-      <img src="@/assets/sysAdmin.png" />
-    </div>
-    <div><img src="@/assets/lamp.png" />
-      <img src="@/assets/sandClock.png" />
-      <img src="@/assets/moneyBag.png" />
-    </div>
-  </container>
-  <!-- services -->
-  <container class="services">
-    <div class="services-info">
-      <div><p>Поддерживаемые игры и программы</p></div>
-      <div class="services-games"><img src="@/assets/games.png" /></div>
-    </div>
-  </container>
-  <!-- plans -->
-  <div class="tarifPlans">
-    <p class="tarifPlans-tag" id="tarifPlans">Тарифные планы </p>
-    <div class="tarifPlans-buttons">
-      <input checked type="radio" id="one" value="1" v-model="picked" />
-      <label for="one">Игровые сервера</label>
-      <input type="radio" id="two" value="2" v-model="picked" />
-      <label for="two">VDS</label>
-      <a class="button" href="https://dedic.srvup.ru/" target="_blank"
+    <!-- plans -->
+    <div class="tarifPlans">
+      <p class="tarifPlans-tag" id="tarifPlans">Тарифные планы</p>
+      <div class="tarifPlans-buttons">
+        <input checked type="radio" id="one" value="1" v-model="picked" />
+        <label for="one">Игровые сервера</label>
+        <input type="radio" id="two" value="2" v-model="picked" />
+        <label for="two">VDS</label>
+        <a class="button" href="https://dedic.srvup.ru/" target="_blank"
           >Выделенный сервер</a
         >
+      </div>
+      <div class="tarifPlans-table">
+        <tableTarifs :table="table1" :inTarifs="inTarifs" v-if="picked == 1" />
+        <tableTarifs
+          :table="table1"
+          :inTarifs="inTarifs2"
+          :deleteConnect="false"
+          v-if="picked == 2"
+        />
+      </div>
+      <div
+        style="margin-bottom: 20px"
+        class="stepform_8vGLfm7 rnd_1271651571"
+        v-show="picked == 1"
+      ></div>
+      <div class="stepform_AzCaoLN rnd_1283789748" v-show="picked == 2"></div>
     </div>
-    <div class="tarifPlans-table">
-      <tableTarifs :table="table1" :inTarifs="inTarifs" v-if="picked == 1" />
-      <tableTarifs
-        :table="table1"
-        :inTarifs="inTarifs2"
-        :deleteConnect="false"
-        v-if="picked == 2"
-      />
-    </div>
-    <div style="margin-bottom: 20px;" class="stepform_8vGLfm7 rnd_1271651571" v-show="picked == 1"></div>
-    <div class="stepform_AzCaoLN rnd_1283789748" v-show="picked == 2"></div>
     <div class="uniqueOffers">
       <p class="uniqueOffers-text">Уникальные предложения</p>
       <div class="uniqueOffers-div">
         <p class="uniqueOffers-div-text">Скидка 5% при оплате за три месяца</p>
         <p class="uniqueOffers-div-text">15% за приглашенного друга</p>
-        <p class="uniqueOffers-div-text">Если найдете дешевле, сделаем скидку</p>
+        <p class="uniqueOffers-div-text">
+          Если найдете дешевле, сделаем скидку
+        </p>
+      </div>
+    </div>
+    <div class="questions" id="questions">
+      <div class="questions-info">
+        <p class="questions-info-top">Часто задаваемые вопросы</p>
+        <p class="questions-info-bottom">
+          Не нашли ответа на вопрос?<br />
+          Загляните в нашу
+          <a
+            style="text-decoration: underline"
+            target="_blank"
+            href="https://wiki.srvup.ru/"
+            >базу знаний</a
+          >
+          или<br />
+          напишите нам, мы будем рады помочь!
+        </p>
+      </div>
+      <div class="text-subtitle-2 mt-4 mb-2"></div>
+      <Accordion>
+        <AccordionTab header="Как долго активируется мой сервер?">
+          <p>
+            Активация игрового сервера обычно занимает всего несколько минут
+            после оформления заказа за исключением тестового периода и
+            форс-мажорных ситуаций. В случае с VDS как только вы заплатите за
+            услугу и установка сервера будет завершена, вы сможете приступить к
+            управлению своим сервером.
+          </p>
+        </AccordionTab>
+        <AccordionTab header="Сколько человек выдержит мой игровой сервер?">
+          <div>
+            <p>
+              Вместимость вашего игрового сервера зависит от выбранного вами
+              тарифного плана. Мы предоставляем различные варианты, которые
+              поддерживают разное количество одновременных игроков. Наши тарифы
+              позволяют выдерживать от нескольких десятков до нескольких сотен
+              игроков одновременно. Подробную информацию вы можете получить в
+              базе знаний или уточнить у нашей службы поддержки.
+            </p>
+          </div>
+        </AccordionTab>
+        <AccordionTab
+          header="Могу ли я создать сервер по другой игре, кроме Minecraft?"
+        >
+          <p>
+            Конечно! Помимо, Minecraft, вы можете создать сервер для большинства
+            игр и сервисов. Мы поддерживаем широкий спектр и постоянно расширяем
+            список доступных опций. Если у вас есть конкретная игра или сервис,
+            для которого вы хотите создать сервер, свяжитесь с нашей службой
+            поддержки, и мы постараемся предоставить вам соответствующие
+            возможности.
+          </p>
+        </AccordionTab>
+        <AccordionTab header="На каком процессоре будет работать мой сервер?">
+          <p>
+            Ваш сервер будет работать на процессоре AMD Ryzen 7 3800X, идеально
+            подходящем для игровых серверов, включая Minecraft. С мощными 8
+            ядрами и 16 потоками, этот процессор обеспечивает высокую
+            производительность и плавный геймплей. С его частотой 4.5 ГГц вы
+            получите быстрые вычисления и качественный игровой опыт.
+          </p>
+        </AccordionTab>
+      </Accordion>
+    </div>
+    <div class="footer">
+      <div class="footer-left">
+        <img class="logo" src="@/assets/header_logo.png" />
+        <p>
+          Клиентоорентированный<br />
+          хостинг, которому нет<br />
+          равных!
+        </p>
+        <p class="footer-left-p">2023 All right reserved. SrvUP</p>
+      </div>
+      <div class="footer-middle">
+        <ul class="footer-middle-list">
+          <p>Ссылки</p>
+          <li>
+            <a href="https://wiki.srvup.ru/" target="_blank">База знаний</a>
+          </li>
+          <li>
+            <a href="https://vk.com/topic-200598401_49056856" target="_blank"
+              >Отзывы</a
+            >
+          </li>
+          <li><a href="https://bill.srvup.ru">Биллинг</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="footer-middle-list">
+          <p>Документы</p>
+          <li>
+            <a href="https://wiki.srvup.ru/terms-of-use" target="_blank"
+              >Пользовательское соглашение</a
+            >
+          </li>
+          <li>
+            <a href="https://wiki.srvup.ru/privacy-policy" target="_blank"
+              >Политика конфиденциальности</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <div>
+          <p>
+            Мы в социальных<br />
+            сетях
+          </p>
+          <a href="tg.srvup.ru" target="_blank"
+            ><img src="@/assets/tg_icon.png"
+          /></a>
+          <a href="vk.srvup.ru" target="_blank"
+            ><img src="@/assets/vk_icon.png"
+          /></a>
+          <a href="https://discord.srvup.ru/" target="_blank"
+            ><img src="@/assets/discord_icon.png"
+          /></a>
+        </div>
+        <div>
+          <p>Принимаем к оплате</p>
+          <img src="@/assets/oplata_mir.png" />
+          <img src="@/assets/oplata_sbp.png" />
+          <img src="@/assets/oplata_icon.png" />
+          <img src="@/assets/oplata_qiwi.png" />
+        </div>
       </div>
     </div>
   </div>
-  <container class="questions" id="questions">
-    <div class="questions-info">
-      <p class="questions-info-top">Часто задаваемые вопросы</p>
-      <p class="questions-info-bottom">
-        Не нашли ответа на вопрос?<br />
-        Загляните в нашу <a style="text-decoration:underline" target="_blank" href="https://wiki.srvup.ru/">базу знаний</a> или<br />
-        напишите нам, мы будем рады помочь!
-      </p>
-    </div>
-    <div class="text-subtitle-2 mt-4 mb-2"></div>
-    <Accordion>
-      <AccordionTab header="Как долго активируется мой сервер?">
-        <p>
-          Активация игрового сервера обычно занимает всего несколько минут после
-          оформления заказа за исключением тестового периода и форс-мажорных
-          ситуаций. В случае с VDS как только вы заплатите за услугу и установка
-          сервера будет завершена, вы сможете приступить к управлению своим
-          сервером.
-        </p>
-      </AccordionTab>
-      <AccordionTab header="Сколько человек выдержит мой игровой сервер?">
-        <div>
-          <p>
-            Вместимость вашего игрового сервера зависит от выбранного вами
-            тарифного плана. Мы предоставляем различные варианты, которые
-            поддерживают разное количество одновременных игроков. Наши тарифы
-            позволяют выдерживать от нескольких десятков до нескольких сотен
-            игроков одновременно. Подробную информацию вы можете получить в базе
-            знаний или уточнить у нашей службы поддержки.
-          </p>
-        </div>
-      </AccordionTab>
-      <AccordionTab
-        header="Могу ли я создать сервер по другой игре, кроме Minecraft?"
-      >
-        <p>
-          Конечно! Помимо, Minecraft, вы можете создать сервер для большинства
-          игр и сервисов. Мы поддерживаем широкий спектр и постоянно расширяем
-          список доступных опций. Если у вас есть конкретная игра или сервис,
-          для которого вы хотите создать сервер, свяжитесь с нашей службой
-          поддержки, и мы постараемся предоставить вам соответствующие
-          возможности.
-        </p>
-      </AccordionTab>
-    </Accordion>
-  </container>
-  <container class="footer">
-    <div class="footer-left">
-      <img class="logo" src="@/assets/header_logo.png" />
-      <p>
-        Клиентоорентированный<br />
-        хостинг, которому нет<br />
-        равных!
-      </p>
-      <p class="footer-left-p">2023 All right reserved. SrvUP</p>
-    </div>
-    <div class="footer-middle">
-      <ul class="footer-middle-list">
-        <p>Ссылки</p>
-        <li>
-          <a href="https://wiki.srvup.ru/" target="_blank">База знаний</a>
-        </li>
-        <li>
-          <a href="https://vk.com/topic-200598401_49056856" target="_blank">Отзывы</a>
-        </li>
-        <li><a href="https://bill.srvup.ru">Биллинг</a></li>
-      </ul>
-      <ul class="footer-middle-list">
-        <p>Документы</p>
-        <li>
-          <a href="https://wiki.srvup.ru/terms-of-use" target="_blank"
-            >Пользовательское соглашение</a
-          >
-        </li>
-        <li>
-          <a href="https://wiki.srvup.ru/privacy-policy" target="_blank"
-            >Политика конфиденциальности</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="footer-right">
-      <div>
-        <p>
-          Мы в социальных<br />
-          сетях
-        </p>
-        <a href="https://t.me/srvup" target="_blank"
-          ><img src="@/assets/tg_icon.png"
-        /></a>
-        <a href="https://vk.com/srvup_ru" target="_blank"
-          ><img src="@/assets/vk_icon.png"
-        /></a>
-        <a href="https://discord.srvup.ru/" target="_blank"
-          ><img src="@/assets/discord_icon.png"
-        /></a>
-      </div>
-      <div>
-        <p>Принимаем к оплате</p>
-        <img src="@/assets/oplata_mir.png" />
-        <img src="@/assets/oplata_sbp.png" />
-        <img src="@/assets/oplata_icon.png" />
-        <img src="@/assets/oplata_qiwi.png" />
-      </div>
-    </div>
-  </container>
 </template>
 
 <script>
@@ -219,6 +308,7 @@ export default {
   components: { tableTarifs, Accordion, AccordionTab },
   data() {
     return {
+      menuVisible: false,
       toggle: true,
       picked: 1,
       plans: [
@@ -235,7 +325,7 @@ export default {
       inTarifs: [
         {
           id: 1,
-          tarifName: "GS-1(Bungeecord)",
+          tarifName: "GS-1",
           cpu: "0.5 vCore",
           ram: "1 GB DDR4",
           container: "10 GB NVMe",
@@ -410,8 +500,13 @@ export default {
       },
     };
   },
+  methods: {
+    toggleMenu() {
+      this.menuVisible = !this.menuVisible
+    }
+  }
 };
-( function (s, t, e, p, f, o, r, m) {
+(function (s, t, e, p, f, o, r, m) {
   s[t] = s[t] || {};
   s[t][1271651571] = {
     id: "8vGLfm7",
@@ -430,8 +525,8 @@ export default {
   "appendChild",
   "querySelector"
 );
-( function (s, t, e, p, f, o, r, m) {
-  s[t] = s[t] || {}; 
+(function (s, t, e, p, f, o, r, m) {
+  s[t] = s[t] || {};
   s[t][1283789748] = {
     id: "AzCaoLN",
     rnd: 1283789748,
@@ -450,122 +545,79 @@ export default {
   "querySelector"
 );
 </script>
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
-template {
-  display: flex;
-  gap: 100px;
-  scroll-behavior: smooth;
-}
-* {
-  font-family: 'IBM Plex Sans', sans-serif;
-  align-items: center;
+<style>
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+li {
+  list-style: none;
 }
 a {
   text-decoration: none;
-  color: rgba(18, 18, 18, 0.6);
 }
-li {
-  list-style-type: none;
-  color: rgba(18, 18, 18, 0.6);
-  font-size: 16px;
-  font-weight: 600;
-}
-/* nav */
-.nav {
-  align-items: center;
-  display: flex;
-  justify-content:space-around;
-  width: 100%;
-  height: 82px;
-  align-items: center;
-  padding-top: 20px;
-  padding-right: 80px;
-  margin-bottom: 50px;
-}
-.nav-ul {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 28px;
-}
-.nav-li {
-  font-size: 20px;
-  font-weight: 600;
-  color: rgba(63, 77, 99, 1);
-  font-style: normal;
-  font-weight: 700;
-}
-.nav-li:hover {
-  color:#1673ff;
-  transition: 0.5s;
-  border-radius: 5px;
-}
-.ref {
-  text-decoration: none;
-}
-.ref:visited {
-  color: rgba(18, 18, 18, 0.6);
-}
-.nav .button {
-  display: flex;
-  height: 40px;
-  min-height: 40px;
-  max-height: 40px;
-  padding: 13px 15.97px 13px 16px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  background: #1d56ec;
-  color: rgba(238, 238, 238, 1);
-  border-radius: 8px;
-  font-style: normal;
-  font-weight: 700;
-}
-/* tarifs */
-.tarifs {
-  display: flex;
-  width: 1200px;
-  height: 462px;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  flex-shrink: 0;
-  border-radius: 50px;
-  background: #fff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+.container {
+  width: 1366px;
   margin: 0 auto;
 }
-#btn_1 a {
-  color: white;
+@media (min-width: 1366px) {
+  .burger {
+    display: none;
+  }
 }
-#btn_2 a {
-  color: rgba(22, 115, 255, 1);
+@media (min-width: 600px) {
+  .burger {
+    display: none;
+  }
 }
-.tarifs-info {
+.nav {
   display: flex;
-  width: 532px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
 }
-.tarifs-img {
-  width: 417.654px;
-  height: 389.095px;
-  padding-top: 38px;
+.nav-ul {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+.nav-ul a {
+  color: #3f4d63;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+}
+.nav-ul a:hover {
+  color: #1652eb;
+  transition: 0.7s;
+}
+#app > div.nav > a {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  background: #1d56ec;
+  border-radius: 8px;
+  padding: 8px 15px;
+}
+.tarifs {
+  background: white;
+  border-radius: 50px;
+  display: flex;
+  padding: 10px 90px 10px 90px;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px 100px 0px;
 }
 .tarifs-info-host {
-  color: var(--t-1, #172944);
+  color: var(--t1, #172944);
   font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
   line-height: normal;
+  font-weight: 700;
+  font-style: normal;
+  padding-bottom: 24px;
 }
 .tarifs-info-speed {
-  color: var(--t-2, #3f4d63);
-  font-size: 15px;
-  font-style: normal;
+  font-size: 16px;
+  color: var(--t2, #3f4d63);
+  padding-bottom: 24px;
   font-weight: 400;
   line-height: 24px;
 }
@@ -573,56 +625,78 @@ li {
   display: flex;
   gap: 30px;
 }
-.tarifs-btns .button {
-  padding-top: 3px;
+#btn_1 {
   width: 200px;
-  height: 48px;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(22, 115, 255, 1);
+  min-height: 48px;
+  padding: 14px 15px 14px 15px;
+  background: #1d56ec;
   border-radius: 8px;
-  border: 0px;
-  font-weight: 600;
-  padding-bottom: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
   text-align: center;
-  padding-top: 10px;
 }
-/* why we */
+#btn_2 {
+  width: 200px;
+  min-height: 48px;
+  padding: 14px 15px 14px 15px;
+  background: white;
+  border-radius: 8px;
+  color: #1d56ec;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
 .about {
-  margin:0 auto;
-  text-align: center;
-  height: 350px;
-  padding-top: 20px;
-}
-.div-about {
-  margin-top:60px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px 0px 50px 0px;
 }
 .about p {
-  color: var(--t-2, #3f4d63);
-  font-size: 32px;
-  font-style: normal;
+  color: #3f4d63;
   font-weight: 700;
-  line-height: 0%;
-  margin: 50px;
+  font-size: 32px;
+  padding-bottom: 20px;
 }
-/* services */
 .services {
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 50px;
+  margin: 50px 0px 50px 0px;
 }
 .services p {
-  color: var(--t-2, #3f4d63);
-  font-size: 32px;
-  font-style: normal;
+  text-align: center;
+  color: #3f4d63;
   font-weight: 700;
-  line-height: 0%;
-  margin: 50px;
+  font-size: 32px;
+  padding-bottom: 20px;
 }
-.services-games {
-  margin-left: 150px;
-  margin-top: 50px;
+.services img {
+  margin-left: 180px;
 }
-/* tables */
+#tarifPlans {
+  text-align: center;
+  color: #3f4d63;
+  font-weight: 700;
+  font-size: 32px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+.tarifPlans-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.tarifPlans-buttons a {
+  background: white;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(18, 18, 18, 0.7);
+  padding: 13px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
 input[type="radio"] {
   display: none;
 }
@@ -639,418 +713,214 @@ input[type="radio"] + label {
   text-align: center;
   padding: 13px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 input[type="radio"]:checked + label {
   background-color: #1673ff;
   color: #ffffff;
 }
-
-.tarifPlans {
-  align-items: center;
-  padding: 20px;
-  margin: 0 auto;
-  gap: 50px;
-}
-.tarifPlans-tag {
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 27px;
-  color: #3F4D63;
-}
-.tarifPlans-buttons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 678px;
-  height: 78px;
-  border-radius: 30px;
-  margin: auto;
-}
-.tarifPlans-buttons .button {
-    max-width: 200px;
-    max-height: 50px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    border: none;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    color: rgba(18, 18, 18, 0.7);
-    text-align: center;
-    padding: 13px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-/* offers */
 .uniqueOffers {
-  height: 345px;
-  width: 1300px;
-  margin: 70px auto;
-  text-align: center;
+  margin: 50px 0px 50px 0px;
   background: white;
-  padding: 20px;
   border-radius: 50px;
+  padding: 40px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .uniqueOffers-text {
-  font-size: 42px;
-  font-weight: 600;
-  margin-bottom: 52px;
+  text-align: center;
+  color: #3f4d63;
+  font-weight: 700;
+  font-size: 32px;
+  padding-bottom: 20px;
 }
 .uniqueOffers-div {
   display: flex;
-  gap: 31px;
-  align-items: stretch;
   justify-content: center;
+  gap: 20px;
 }
 .uniqueOffers-div-text {
+  color: #172944;
+  text-align: center;
   font-size: 24px;
   font-weight: 500;
-  text-align: center;
-  width: 371px;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #1d56ec;
+  width: 370px;
+  border-bottom: 4px solid #1d56ec;
 }
 .questions {
   display: flex;
-  width: 1300px;
-  margin: auto;
+  justify-content: space-evenly;
+  gap: 40px;
+  margin: 50px 0px 50px 0px;
+  min-height: 500px;
   align-items: center;
-  gap: 100px;
-  height: 350px;
+  padding: 30px 0;
 }
 .questions-info {
-  width: 370px;
+  max-width: 450px;
 }
-.p-accordion {
-  width: 900px;
-}
-.p-accordion-header {
-  width: 900px;
-  font-size: 24px;
-}
-:deep(.p-accordion .p-accordion-header .p-accordion-header-link) {
-  padding: 1.75rem;
-}
-.p-accordion-content {
-  width: 900px;
-  background-color: white;
-  font-size: 40px;
-}
-.questions-info-top {
-  font-size: 49px;
-  font-weight: 600;
-}
-.questions-info-bottom {
-  padding-top: 27px;
-  font-size: 17px;
-  font-weight: 400;
-}
-.footer {
-  margin-top: 120px;
-  align-items: center;
-  justify-content: center;
-  gap: 170px;
-  display: grid;
-  align-items: start;
-  grid-template-columns: 263px 500px 235px;
-}
-.footer-left p {
-  font-size: 14px;
-  color: rgba(18, 18, 18, 0.7);
-  padding-left: 30px;
-  margin-top: 40px;
-  font-weight: 500;
-}
-.footer-left .logo {
-  padding-left: 30px;
-}
-.footer-left-p {
-  font-size: 14px;
-  font-weight: 500;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  color: rgba(17, 17, 17, 1) !important;
-}
-.footer-middle {
-  display: flex;
-  line-height: 40px;
-  align-items: flex-start;
-}
-.footer-middle p {
-  font-size: 22px;
-  font-weight: 600;
-}
-.footer-right {
-  line-height: 40px;
-  text-align: start;
-}
-.footer-right p {
-  color: var(--t-1, #172944);
-  font-size: 18px;
+#questions > div.questions-info > p.questions-info-top {
+  color: var(--t1, #172944);
+  font-family: IBM Plex Sans;
+  font-size: 59px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 76px;
 }
-.footer-right li {
-  color: rgba(17, 17, 17, 1);
-  font-size: 21px;
+.questions-info-bottom {
+  color: var(--t2, #3f4d63);
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0px 50px 0px;
+  line-height: 40px;
+}
+.footer p {
+  color: #172944;
+  font-size: 22px;
+  font-weight: 700;
+}
+#app > div.container > div.footer > div.footer-left > p:nth-child(2) {
+  font-size: 16px;
   font-weight: 500;
-  position: relative;
-  padding-left: 40px;
 }
-.footer-right img {
-  margin: 10px 10px 10px 0px;
+.footer a {
+  color: #3f4d63;
 }
-.footer-middle-list {
-  width: 250px;
+#questions > div.p-accordion.p-component {
+  width: 900px;
 }
-@media screen and (max-width:980px) {
-    .nav {
-      width: 95%;
-    }
-    .nav-ul {
-      gap: 10px;
-    }
-    .nav-li {
-      font-size: 16px;
-    }
-    .tarifs {
-      width: 95%;
-      gap: 0px;
-    }
-    .tarifs-img {
-      width: 300px;
-      height: 300px;
-    }
-    .services {
-      width: 95%;
-    }
-    .services img {
-      width: 95%;
-    }
-    .services-games {
-      margin-left: 75px;
-    }
-    .uniqueOffers {
-      width: 95%;
-      height: 300px;
-    }
-    .uniqueOffers-div-text {
-      font-size: 20px;
-    }
-    .questions {
-      gap: 10px;
-      width: 95%;
-    }
-    .footer {
-      grid-template-columns: 263px 400px 235px;
-      gap: 10px;
-    }
-}
-@media screen and (max-width:650px) {
-  .nav img {
-    width:100px;
+@media screen and (max-width: 480px) {
+  .container {
+    width: 350px;
   }
-  .nav-ul {
-      gap: 8px;
-    }
-    .nav-li {
-      font-size: 10px;
-    }
-    .nav-btn {
-      width: 80px;
-    }
-    .tarifs {
-      width: 95%;
-      gap: 20px;
-    }
-    .tarifs-img {
-      width: 200px;
-      height: 200px;
-    }
-    .tarifs-info {
-      width: 300px;
-      margin-left: 5px;
-    }
-    .tarifs-info-host {
-      font-size: 16px;
-      width: 300px;
-    }
-    .tarifs-info-speed {
-      font-size: 12px;
-    }
-    .tarifs-btns {
-      gap: 5px;
-      display: flex;
-      flex-direction: column;
-      margin-left: 10px;
-    }
-    .services p {
-      font-size: 20px;
-    }
-    .tarifPlans-tag {
-      font-size: 20px;
-    }
-    .tarifPlans-buttons {
-      width: 560px;
-      justify-content: space-evenly;
-    }
-    .tarifPlans-buttons label {
-      margin: 5px;
-    }
-    .tarifPlans-buttons .button {
-      font-size: 12px;
-    }
-    .uniqueOffers {
-      height: 200px;
-    }
-    .uniqueOffers-text {
-      font-size: 24px;
-    }
-    .uniqueOffers-div-text {
-      font-size: 12px;
-    }
-    .footer p{
-      font-size: 16px;
-    }
-    .footer-left img  {
-      width: 200px;
-    }
-    .footer-left p {
-      font-size: 12px;
-    }
-    .footer * {
-      font-size: 12px;
-    }
-    .footer-middle {
-      line-height: 25px;
-    }
-    .footer {
-      grid-template-columns:200px 200px 170px;
-      gap: 5px;
-    }
+  .burgerMenu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #e4e8eb;
+    transition: left 0.5s;
+  }
+  .menu-hidden {
+    left: -100%;
+  }
+  .menu-visible {
+    left: 0;
+  }
+  .burgerMenu-ul {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
-@media screen and (max-width:480px) {
-    .nav {
-      margin: 0 auto;
-      padding: 10px;
-      font-size: 12px;
-    }
-    #app > div.nav > a {
-      width: 50px;
-      font-size: 10px;
-    }
-    #app > div.nav > img {
-      width: 75px;
-    }
-    .nav-li {
-      font-size: 9px;
-    }
-    .nav-btn {
-      width: 60px;
-    }
-    .tarifs {
-      gap: 0px;
-    }
-    .tarifs-info {
-      width: 400px;
-    }
-    .tarifs-img {
-      display: none;
-    }
-    .tarifs-info-host {
-      font-size: 20px;
-      width: 360px;
-      text-align: center;
-    }
-    .tarifs-info-speed {
-      text-align: center;
-    }
-    .tarifs-btns {
-      width: 340px;
-      font-size: 14px;
-    }
-    .tarifs-info-btn {
-      width: 150px;
-    }
-    .about p {
-      font-size: 20px;
-    }
-    .tarifPlans-buttons {
-      width: 370px;
-      justify-content: space-evenly;
-    }
-    .tarifPlans-buttons .button {
-      font-size: 8px;
-      height: 40px;
-      width: 180px;
-    }
-    .tarifPlans-buttons label {
-      margin: 5px;
-      
-    }
-    input[type="radio"] + label {
-      font-size: 10px;
-      height: 40px;
-    }
-    .tarifPlans-buttons a {
-      font-size: 10px;
-    }
-    .questions {
-      flex-direction: column;
-      height: auto;
-    }
-    #questions > div.p-accordion.p-component {
-      width: 425px;
-    }
-    :deep(.p-accordion .p-accordion-header .p-accordion-header-link) {
-  padding: 1rem;
+.nav-ul {
+  display: none;
 }
-    .services p {
-      font-size: 16px;
-    }
-    .services-games {
-      width: 500px;
-      margin-left: 0px;
-    }
-    .uniqueOffers-text {
-      margin-bottom: 15px;
-    }
-    .questions-info-top {
-      font-size: 24px;
-    }
-    .footer p{
-      font-size: 16px;
-    }
-    .footer-left img  {
-      width: 150px;
-      margin-left: 40px;
-    }
-    .footer-left p {
-      font-size: 16px;
-    }
-    .footer * {
-      font-size: 12px;
-    }
-    .footer {
-      display: flex;
-      width: 450px;
-      flex-direction: column;
-      margin: 0 auto;
-      padding-top: 15px;
-      align-items: center
-    }
-    .footer-left .logo {
-      padding-left: 0;
-    }
-    .footer-middle-list {
-      width: 200px;
-      text-align: center;
-    }
-    .footer-right {
-      text-align: center;
-      font-size: 16px;
-    }
+#app > div.nav > a {
+  display: none;
+}
+#app > div.nav > div > div.burgerMenu.menu-hidden.menu-visible > a {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  background: #1d56ec;
+  border-radius: 8px;
+  padding: 8px 15px;
+  margin-left: 10px;
+}
+.burgerMenu-ul a {
+  color: #3f4d63;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+}
+.burgerMenu-ul a:hover {
+  color: #1652eb;
+  transition: 0.7s;
+}
+  .tarifs {
+    display: block;
+    padding: 20px;
+  }
+  .tarifs-info-host {
+    font-size: 22px;
+  }
+  .tarifs img {
+    display: none;
+  }
+  .about {
+    text-align: center;
+  }
+  .about img {
+    width: 280px;
+    height: auto;
+  }
+  .about p {
+    font-size: 24px;
+  }
+  .services p {
+    font-size: 22px;
+  }
+  .services-games img {
+    margin: 0;
+    width: 400px;
+  }
+  #tarifPlans {
+    font-size: 22px;
+  }
+  .tarifPlans-buttons {
+    gap: 5px;
+  }
+  input[type="radio"] + label {
+    padding: 4px;
+    font-size: 14px;
+  }
+  #app
+    > div.container
+    > div.tarifPlans
+    > div.tarifPlans-buttons
+    > label:nth-child(4) {
+    padding-top: 15px;
+  }
+  .tarifPlans-buttons a {
+    text-align: center;
+    padding: 4px;
+    font-size: 14px;
+  }
+  .uniqueOffers-div {
+    flex-direction: column;
+  }
+  .uniqueOffers-div-text {
+    width: 270px;
+  }
+  .questions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #questions > div.questions-info > p.questions-info-top {
+    font-size: 25px;
+  }
+  .questions-info-bottom {
+    font-size: 16px;
+  }
+  #questions > div.p-accordion.p-component {
+    width: 370px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer-left,
+  .footer-middle-list,
+  .footer-right {
+    text-align: center;
+  }
 }
 </style>

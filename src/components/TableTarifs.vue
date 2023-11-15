@@ -1,5 +1,6 @@
 <template>
-  <table >
+  <div>
+  <table>
     <thead>
       <tr class="table-head" >
         <th class="text-left" v-for="(text,index) in table" :key="index">
@@ -42,6 +43,7 @@
       </tr>
     </tbody>
   </table>
+</div>
 </template>
 /* 105.011600928 */
 <script>
@@ -78,7 +80,7 @@
   padding-top: 10px;
 }
 table {
-  width: 1170px;
+  width: 90%;
   margin: 0 auto;
   border-spacing:0px 15px;
   text-align: center;
@@ -88,7 +90,7 @@ thead tr {
   background-color: #FFFFFF;
   display: block;
   width: 100%;
-  margin-left:23px;
+  margin-left:12px;
   border-radius: 10px 10px 0 0;
 }
 thead th {
@@ -106,7 +108,7 @@ tr {
 tbody tr {
   display: block;
   width: 100%;
-  margin: 20px;
+  margin: 10px;
   border-radius: 20px;
 }
 tbody td {
@@ -154,19 +156,21 @@ tbody td {
 }
 @media screen and (max-width:480px) {
   table {
-    width: 90%;
+    width: 200px;
   }
   .table-head {
-    width: 400px;
+    width: 350px;
     padding: 10px;
+    margin: 5px;
   }
   thead th {
     padding-left: 0px;
     padding-right: 0px;
   }
   tbody tr{
-   width: 400px;
+   width: 350px;
    padding: 10px;
+   margin: 5px;
   }
   tbody td {
     padding-left: 5px;

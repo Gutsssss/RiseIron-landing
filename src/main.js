@@ -11,12 +11,15 @@ import * as directives from 'vuetify/directives'
 
 import PrimeVue from 'primevue/config';
 
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+
 const vuetify = createVuetify({
   components,
   directives,
 })
 
 
-createApp(App).use(vuetify).use(PrimeVue).use(mdiVue,{
+createApp(App).use(vuetify).use(ElementPlus).use(PrimeVue).use(mdiVue,{
   icons: mdijs
 }).mount('#app')
