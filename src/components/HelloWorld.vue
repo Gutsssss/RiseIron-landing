@@ -13,7 +13,7 @@
       >
       <a
         class="ref"
-        href="https://vk.com/topic-200598401_49056856"
+        href="https://reviews.srvup.ru"
         target="_blank"
         >
         <li class="nav-li">Отзывы</li>
@@ -42,7 +42,7 @@
         ></path></svg
     ></el-icon>
   </div>
-    <div class="burgerMenu menu-hidden" :class="{'menu-visible' : menuVisible}">
+    <div class="burgerMenu menu-hidden" :class="{'menu-visible' : menuVisible,'unscroll': menuVisible}">
       <el-icon  @click="toggleMenu" size="50" color="rgba(29, 86, 236, 1)"
       ><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" data-v-ea893728=""><path fill="currentColor" d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"></path></svg></el-icon>
       <ul class="burgerMenu-ul">
@@ -56,7 +56,8 @@
       >
       <a
         class="ref"
-        href="https://vk.com/topic-200598401_49056856"
+        @click="toggleMenu"
+        href="https://reviews.srvup.ru"
         target="_blank"
         ><li class="burgerMenu-li">Отзывы</li></a
       >
@@ -87,7 +88,7 @@
           функциональность перед принятием окончательного решения.
         </p>
         <div class="tarifs-btns">
-          <a id="btn_1" class="button" href="trial.srvup.ru" target="_blank"
+          <a id="btn_1" class="button" href="https://trial.srvup.ru" target="_blank"
             >Протестировать сервер</a
           >
           <a
@@ -130,6 +131,7 @@
       <p>Поддерживаемые игры и программы</p>
       <div class="services-games">
         <img src="@/assets/games.png" />
+
       </div>
     </div>
     <!-- plans -->
@@ -236,8 +238,9 @@
       <div class="footer-left">
         <img class="logo" src="@/assets/header_logo.png" />
         <p>
-          Клиентоорентированный<br />
-          хостинг, которому нет<br />
+          Клиентоорентированный
+          хостинг,<br />
+           которому нет
           равных!
         </p>
         <p class="footer-left-p">2023 All right reserved. SrvUP</p>
@@ -277,10 +280,10 @@
             Мы в социальных<br />
             сетях
           </p>
-          <a href="tg.srvup.ru" target="_blank"
+          <a href="https://tg.srvup.ru" target="_blank"
             ><img src="@/assets/tg_icon.png"
           /></a>
-          <a href="vk.srvup.ru" target="_blank"
+          <a href="https://vk.srvup.ru" target="_blank"
             ><img src="@/assets/vk_icon.png"
           /></a>
           <a href="https://discord.srvup.ru/" target="_blank"
@@ -780,11 +783,19 @@ input[type="radio"]:checked + label {
   margin: 50px 0px 50px 0px;
   line-height: 40px;
 }
+.footer-right img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#app > div.container > div.footer > div.footer-left > p.footer-left-p {
+  font-size: 18px;
+}
 .footer p {
   color: #172944;
   font-size: 22px;
   font-weight: 700;
 }
+
 #app > div.container > div.footer > div.footer-left > p:nth-child(2) {
   font-size: 16px;
   font-weight: 500;
@@ -799,6 +810,9 @@ input[type="radio"]:checked + label {
   .container {
     width: 350px;
   }
+  .unscroll {
+    overflow-y: hidden;
+  }
   .burgerMenu {
     position: fixed;
     top: 0;
@@ -807,6 +821,7 @@ input[type="radio"]:checked + label {
     height: 100%;
     background-color: #e4e8eb;
     transition: left 0.5s;
+    overflow-x: hidden;
   }
   .menu-hidden {
     left: -100%;
@@ -818,6 +833,7 @@ input[type="radio"]:checked + label {
   display: flex;
   gap: 10px;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 .nav-ul {
   display: none;

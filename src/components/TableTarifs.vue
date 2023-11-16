@@ -114,11 +114,11 @@ tbody tr {
 tbody td {
   padding-left: 33px;
     padding-right: 38px;
-  width: 160px;
+  width: 170px;
 }
 .text-left {
   margin-left: 10px;
-  width: 158px;
+  width: 166px;
 }
 @media screen and (max-width: 980px) {
   table {
