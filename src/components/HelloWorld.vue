@@ -130,8 +130,9 @@
     <div class="services">
       <p>Поддерживаемые игры и программы</p>
       <div class="services-games">
-        <img src="@/assets/games.png" />
-
+        <img src="@/assets/game1.png" />
+        <img src="@/assets/game2.png" />
+        <img src="@/assets/game3.png" />
       </div>
     </div>
     <!-- plans -->
@@ -663,18 +664,17 @@ a {
   font-size: 32px;
   padding-bottom: 20px;
 }
-.services {
-  margin: 50px 0px 50px 0px;
+.services-games {
+  display: flex;
+  justify-content: space-evenly;
 }
+
 .services p {
   text-align: center;
   color: #3f4d63;
   font-weight: 700;
   font-size: 32px;
   padding-bottom: 20px;
-}
-.services img {
-  margin-left: 180px;
 }
 #tarifPlans {
   text-align: center;
@@ -883,9 +883,9 @@ input[type="radio"]:checked + label {
   .services p {
     font-size: 22px;
   }
-  .services-games img {
-    margin: 0;
-    width: 400px;
+  .services-games {
+    flex-direction: column;
+    gap: 10px;
   }
   #tarifPlans {
     font-size: 22px;
